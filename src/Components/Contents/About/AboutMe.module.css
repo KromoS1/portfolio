@@ -1,0 +1,65 @@
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    display: flex;
+    background-color: #fff;
+    padding: 0 0 10px 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    background-color: crimson;
+    height: 450px;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+}
+
+.photo {
+    background-color: #c3ec8f;
+    height: 85%;
+    width: 450px;
+
+}
+
+.data {
+    background-color: #c47a7a;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 450px;
+    height: 85%;
+}
+
+.myData {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+span {
+    margin: 10px 0 10px 0;
+}
+
+p {
+    text-align: start;
+}
+
+.blocksServices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c3ec8f;
+    height: 450px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    background-color: #ace8d9;
+    height: 50%;
+    width: 250px;
+}

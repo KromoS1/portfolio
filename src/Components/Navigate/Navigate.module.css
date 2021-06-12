@@ -1,0 +1,10 @@
+.navigate {
+    grid-area: nav;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#navigate{
+    position: fixed;
+}

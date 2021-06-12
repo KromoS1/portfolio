@@ -1,0 +1,8 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    background-color: #e3bce3;
+    height: 45%;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
