@@ -4,7 +4,7 @@ import style from "./Footer.module.css";
 export function Footer (){
     return(
         <div className={style.footer}>
-            Footer
+            © 2021 Roman
         </div>
     )
 }

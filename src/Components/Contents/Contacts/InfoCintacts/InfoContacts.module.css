@@ -1,0 +1,49 @@
+.informationPhone{
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phoneInfo{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.informationEmail{
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.emailInfo{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.informationAddress{
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.addressInfo{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.address{
+    display: flex;
+    flex-flow: row wrap;
+}
