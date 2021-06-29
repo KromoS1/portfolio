@@ -13,7 +13,7 @@ export function InfoContacts(props: PropsType) {
                     <div className={style.iconInfo}>icon</div>
                     <div className={style.phoneInfo}>
                         <h3>Phone</h3>
-                        <p>+375-29-748-58-75</p>
+                        <div className={style.paragraph}><p>+375-29-748-58-75</p></div>
                     </div>
                 </div>
             )
@@ -23,8 +23,10 @@ export function InfoContacts(props: PropsType) {
                     <div className={style.iconInfo}>icon</div>
                     <div className={style.emailInfo}>
                         <h3>Email</h3>
-                        <p>krakenhri@mail.ru</p>
-                        <p>krakenhri@yandex.ru</p>
+                        <div className={style.paragraph}>
+                            <p>krakenhri@mail.ru</p>
+                            <p>krakenhri@yandex.ru</p>
+                        </div>
                     </div>
                 </div>
             )
@@ -34,7 +36,7 @@ export function InfoContacts(props: PropsType) {
                     <div className={style.iconInfo}>icon</div>
                     <div className={style.addressInfo}>
                         <div><h3>Address</h3></div>
-                        <div className={style.address}><p>38/1 Sukharevskaya, Minsk, Belarus</p></div>
+                        <div className={style.paragraph}><p>38/1 Sukharevskaya, Minsk, Belarus</p></div>
                     </div>
                 </div>
             )

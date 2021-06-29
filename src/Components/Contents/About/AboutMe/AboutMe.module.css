@@ -9,14 +9,15 @@
     display: flex;
     justify-content: space-around;
     background-color: crimson;
-    height: 450px;
+    min-height: 450px;
     margin:0 20px 0 20px;
     align-items: center;
+    flex-flow: row wrap;
 }
 
 .photo {
     background-color: #c3ec8f;
-    height: 85%;
+    min-height: 330px;
     width: 450px;
     display: flex;
     justify-content: center;
@@ -29,7 +30,7 @@
     align-items: flex-start;
     flex-direction: column;
     width: 450px;
-    height: 85%;
+    min-height: 330px;
 }
 
 .myData {

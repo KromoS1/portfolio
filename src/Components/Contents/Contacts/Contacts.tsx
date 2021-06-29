@@ -5,7 +5,7 @@ import {InfoContacts} from "./InfoCintacts/InfoContacts";
 
 export function Contacts() {
     return (
-        <div className={style.ContactsBox}>
+        <div className={style.contactsBox}>
             <div className={style.titleContact}>
                 <h1>CONTACT ME</h1>
             </div>
@@ -16,15 +16,15 @@ export function Contacts() {
                     <TypeInput nameInput={"email"}/>
                     <TypeInput nameInput={"subject"}/>
                     <TypeInput nameInput={"message"}/>
+                    <div className={style.sendMail}>
+                        <button>SEND MAIL</button>
+                    </div>
                 </div>
                 <div className={style.information}>
                     <InfoContacts typeInfo={"phone"}/>
                     <InfoContacts typeInfo={"email"}/>
                     <InfoContacts typeInfo={"address"}/>
                 </div>
-            </div>
-            <div className={style.sendMail}>
-                <button>SEND MAIL</button>
             </div>
         </div>
     )
