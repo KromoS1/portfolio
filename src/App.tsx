@@ -4,7 +4,7 @@ import {Navigate} from "./Components/Navigate/Navigate";
 import {Contents} from "./Components/Contents/Contents";
 import {BrowserRouter} from "react-router-dom";
 
-function App() {
+export function App() {
     return (
         <BrowserRouter>
             <div className="App">
@@ -14,5 +14,3 @@ function App() {
         </BrowserRouter>
     );
 }
-
-export default App;

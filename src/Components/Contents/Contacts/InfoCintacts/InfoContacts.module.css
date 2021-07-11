@@ -1,65 +1,40 @@
-.informationPhone{
+.informationBox{
     background-color: cornflowerblue;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 200px;
-}
-
-.phoneInfo{
-    background-color: blue;
-    display: flex;
-    margin: 0 20px 0 50px;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 40%;
-    max-width: 50%;
-}
-
-.informationEmail{
-    background-color: cornflowerblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-}
-
-.emailInfo{
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 40%;
-    max-width: 50%;
-    margin: 0 20px 0 50px;
-}
-
-.informationAddress{
-    background-color: cornflowerblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-}
-
-.addressInfo{
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 40%;
-    max-width: 50%;
-    margin: 0 20px 0 50px;
-}
-
-.paragraph{
-    word-wrap: break-word;
-    white-space: pre-line;
+    justify-content: space-around;
+    min-width: 25vw;
+    min-height: 18vh;
 }
 
 .iconInfo{
-    width: 50px;
-    height: 50px;
     background-color: #57baa1;
+    min-height: 10vh;
+    min-width: 5vw;
+}
+
+.contactsMe{
+    background-color: blue;
+    display: flex;
+    margin: 0 20px 0 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 15vw;
+    min-height: 10vh;
+}
+
+@media (max-width: 1020px){
+    .informationBox{
+        width: 72vw;
+    }
+    .iconInfo{
+        width: 15vw;
+        height: 5vh;
+    }
+    .contactsMe{
+        margin: 10px 20px 10px 50px;
+        width: 60vw;
+        min-height: 10vh;
+    }
 }
 

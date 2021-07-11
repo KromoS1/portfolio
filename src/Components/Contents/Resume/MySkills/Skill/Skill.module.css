@@ -1,7 +1,7 @@
 .skill{
     background-color: blue;
-    min-width: 45%;
-    min-height: 25%;
+    min-width: 30vw;
+    min-height: 15vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -13,4 +13,11 @@
     min-width: 100%;
     display:flex;
     justify-content: space-around;
+}
+
+@media (max-width: 800px){
+    .skill{
+        margin:10px 0 10px 0;
+        width: 45vw;
+    }
 }

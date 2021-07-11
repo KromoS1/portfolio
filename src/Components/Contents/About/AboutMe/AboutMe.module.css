@@ -9,16 +9,16 @@
     display: flex;
     justify-content: space-around;
     background-color: crimson;
-    min-height: 450px;
     margin:0 20px 0 20px;
     align-items: center;
-    flex-flow: row wrap;
+    min-height: 50vh;
+    /*flex-flow: row wrap;*/
 }
 
 .photo {
     background-color: #c3ec8f;
-    min-height: 330px;
-    width: 450px;
+    height: 30vh;
+    width: 24vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,14 +29,15 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 450px;
-    min-height: 330px;
+    width: 27vw;
+    min-height: 35vh;
 }
 
 .myData {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: start;
 }
 
 span {
@@ -45,4 +46,19 @@ span {
 
 p {
     text-align: start;
+}
+
+@media all and (max-width: 700px) {
+    .info{
+        flex-direction: column;
+    }
+    .data{
+        width: 45vw;
+        margin:10px 0 10px 0;
+    }
+    .photo{
+        width: 45vw;
+        height: 30vh;
+        margin:10px 0 10px 0;
+    }
 }

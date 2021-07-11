@@ -12,7 +12,12 @@
     justify-content: space-around;
     align-items: center;
     background-color: #c3ec8f;
-    min-height: 450px;
     margin: 0 20px 50px 20px;
-    flex-flow: row wrap;
+    min-height: 40vh;
+}
+
+@media all and (max-width: 800px) {
+    .blocksServices{
+        flex-direction: column;
+    }
 }

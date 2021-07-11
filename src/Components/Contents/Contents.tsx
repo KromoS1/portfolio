@@ -9,7 +9,7 @@ import {Contacts} from "./Contacts/Contacts";
 export function Contents() {
     return (
         <div className={style.contents}>
-            <Route exact path={"/"} render={() => <Home/>}/>
+            <Route exact path={"/home"} render={() => <Home/>}/>
             <Route path={"/about"} render={() => <AboutMePage/>}/>
             <Route path={"/resume"} render={() => <ResumePage/>}/>
             <Route path={"/contacts"} render={() => <Contacts/>}/>
