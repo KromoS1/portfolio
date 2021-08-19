@@ -1,29 +1,19 @@
-import React from "react";
-import style from "./Contacts.module.css"
-import {TypeInput} from "./TypeInput/TypeInput";
-import {InfoContacts} from "./InfoCintacts/InfoContacts";
+import React from 'react';
+import style from './ContactsStyle.module.scss'
+import {GetInTouch} from './TypeInput/GetInTouch';
+import {InfoContacts} from './InfoCintacts/InfoContacts';
 
 export function Contacts() {
     return (
         <div className={style.contactsBox}>
-            <div className={style.titleContact}>
-                <h1>CONTACT ME</h1>
-            </div>
-            <div className={style.informationBox}>
-                <div className={style.inputBox}>
-                    <div><h3>Get In Touch</h3></div>
-                    <TypeInput nameInput={"name"}/>
-                    <TypeInput nameInput={"email"}/>
-                    <TypeInput nameInput={"subject"}/>
-                    <TypeInput nameInput={"message"}/>
-                    <div className={style.sendMail}>
-                        <button>SEND MAIL</button>
-                    </div>
+            <div className={style.container}>
+                <div className={style.title}>
+                    <h2>Contact me</h2>
+                    <span>Contact Me</span>
                 </div>
-                <div className={style.information}>
-                    <InfoContacts typeInfo={"phone"}/>
-                    <InfoContacts typeInfo={"email"}/>
-                    <InfoContacts typeInfo={"address"}/>
+                <div className={style.row}>
+                    <GetInTouch/>
+                    <InfoContacts />
                 </div>
             </div>
         </div>

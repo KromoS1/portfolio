@@ -1,0 +1,75 @@
+//@import "src/CommonStyles/CommonStyles.module";
+//
+//.infoBox {
+//  flex: 0 0 auto;
+//  width: 50%;
+//  max-width: 100%;
+//  padding-right: calc(var(--bs-gutter-x) * 0.5);
+//  padding-left: calc(var(--bs-gutter-x) * 0.5);
+//  margin-top: var(--bs-gutter-y);
+//
+//  .contactInfo {
+//    margin-top: 30px;
+//    background: $ColorBackNav;
+//    padding: 30px;
+//    display: flex;
+//
+//    span {
+//      display: inline-block;
+//      height: 70px;
+//      width: 70px;
+//      flex: 0 0 70px;
+//      max-width: 70px;
+//      border: 1px solid #2e344e;
+//      text-align: center;
+//      line-height: 66px;
+//      margin-right: 20px;
+//
+//      .icon {
+//        height: 30px;
+//        width: 30px;
+//        vertical-align: middle;
+//        color: $ColorText;
+//      }
+//    }
+//
+//    .info {
+//      text-align: left;
+//
+//      h6 {
+//        @include H6();
+//        margin-top: -5px;
+//        text-align: left;
+//      }
+//
+//      p {
+//        margin-bottom: 0;
+//        margin-top: 0;
+//        color: $ColorText;
+//        cursor: pointer;
+//        &:hover {
+//          color: $ColorPrimary;
+//
+//        }
+//
+//      }
+//    }
+//  }
+//}
+//
+//
+//@media (max-width: 1020px) {
+//  .informationBox {
+//    width: 72vw;
+//  }
+//  .iconInfo {
+//    width: 15vw;
+//    height: 5vh;
+//  }
+//  .contactsMe {
+//    margin: 10px 20px 10px 50px;
+//    width: 60vw;
+//    min-height: 10vh;
+//  }
+//}
+//

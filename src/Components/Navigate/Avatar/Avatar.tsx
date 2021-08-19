@@ -1,10 +1,13 @@
 import React from "react";
-import style from "./Avatar.module.css";
+import style from "../NavigateStyle.module.scss";
+import avatar from "../../../img/avatar.jpg"
 
 export function Avatar (){
     return(
         <div className={style.avatar}>
-            Avatar
+            <a href="/">
+                <img src={avatar} alt="avatar"/>
+            </a>
         </div>
     )
 }

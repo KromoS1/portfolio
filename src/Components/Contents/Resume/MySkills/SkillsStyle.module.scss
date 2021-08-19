@@ -1,0 +1,83 @@
+@import "src/CommonStyles/CommonStyles.module";
+
+.skillsBox {
+  @include containerPartOf();
+
+  .container {
+    @include container();
+
+    .title {
+      @include titleH2();
+    }
+
+    .skillContainer {
+
+      .row {
+        @include rowMarg();
+        margin-top: -30px;
+
+
+        .skill {
+          @include rowPad();
+          flex: 0 0 auto;
+          width: 100%;
+
+          @media (min-width: 992px) {
+            flex: 0 0 auto;
+            width: 50%;
+          }
+
+
+          margin-top: 30px;
+
+          .progressSkill {
+
+            .header {
+
+              @include displayFlex(row, flex-start, '');
+
+              img, .icon {
+                width: 10%;
+                margin-right: 22px;
+                color: $ColorPrimary;
+              }
+
+              h6 {
+                @include h6();
+              }
+            }
+
+            .progressInner {
+              @include displayFlex(row, "", center);
+
+              .percent {
+                flex: 0 0 60px;
+              }
+
+              .progressContainer {
+                background: $ColorBorder;
+                display: block;
+                height: 6px;
+                width: 100%;
+                position: relative;
+                border-radius: 3px;
+
+                span {
+                  width: 95%;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  height: 100%;
+                  background: $ColorPrimary;
+                  transition: all 1s cubic-bezier(.01, .57, .68, 1.05) 0s;
+                  display: inline-block;
+                  border-radius: 3px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

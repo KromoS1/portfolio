@@ -1,24 +1,43 @@
-import React from "react";
-import style from "./AboutMe.module.css";
+import React from 'react';
+import style from './AboutMeStyle.module.scss';
+import myPhoto from '../../../../img/photoAbout.jpg'
 
 export function AboutMe() {
     return (
-        <>
-            <div className={style.heading}><h1>About Me</h1></div>
-            <div className={style.info}>
-                <div className={style.photo}>photo</div>
-                <div className={style.data}>
-                    <h2>Roman Shavlinski</h2>
-                    <p>I am a front-end developer. I can provide clean code and good design.</p>
-                    <div className={style.myData}>
-                        <span>FullName : Roman Shavlinski</span>
-                        <span>Age : 25 Years</span>
-                        <span>Nationality : Belarus</span>
-                        <span>Languages : Russian,English</span>
-                        <span>Address : Minsk</span>
+        <div className={style.aboutMe}>
+            <div className={style.container}>
+                <div className={style.title}>
+                    <h2>About Me</h2>
+                    <span>About Me</span>
+                </div>
+                <div className={style.row}>
+                    <div className={style.containerPhoto}>
+                        <div className={style.photo}>
+                            <img src={myPhoto} alt="/"/>
+                        </div>
+                    </div>
+                    <div className={style.meContainer}>
+                        <div className={style.meContent}>
+                            <h3>
+                                I am
+                                <span> Roman Shaulinski</span>
+                            </h3>
+                            <p>I am a front-end developer. I can provide good code and design.
+                                I also make the site more interactive with web animations.</p>
+                            <ul>
+                                <li><b>FullName</b>Roman Shaulinski</li>
+                                <li><b>Age</b>25 years</li>
+                                <li><b>Nationality</b>Belarus</li>
+                                <li><b>Languages</b>Russian,English</li>
+                                <li><b>Address</b>Minsk</li>
+                            </ul>
+                            <a href="https://drive.google.com/file/d/12Ek0OXfzkWEHQnsJwSiolR4QUAbOHtkz/view?usp=sharing">
+                                Download CV
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }

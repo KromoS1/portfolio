@@ -1,0 +1,76 @@
+@import "../../../CommonStyles/CommonStyles.module";
+
+.particle {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  .container {
+    @include container();
+
+    .row {
+      justify-content: center !important;
+     @include rowMarg();
+
+      .rowContainer {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 100%;
+
+        @media (min-width: 992px) {
+          flex: 0 0 auto;
+          width: 83.33333333%;
+        }
+
+        .homeContent {
+          text-align: center;
+          padding: 50px 80px;
+
+          @media only screen and (max-width: 767px) {
+            padding: 50px 0;
+          }
+
+
+          @media only screen and (min-width: 767px) and (max-width: 1599px) {
+            padding: 50px 0;
+          }
+
+          h1 {
+
+            @include titleH1();
+
+          }
+
+          p {
+            margin-top: 15px;
+            font-size: 1.25rem;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+
+            @media only screen and (max-width: 767px) {
+              font-size: 1.08rem;
+              line-height: 1.55rem;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 991px) {
+              font-size: 1.15rem;
+              line-height: 1.75rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

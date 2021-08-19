@@ -1,12 +1,25 @@
-import React from "react";
-import style from"./Home.module.css";
+import React from 'react';
+import style from './HomeStyle.module.scss';
 
-export function Home () {
+export function Home() {
     return (
-        <div className={style.home}>
-            <div className={style.greeting}>
-                <h1>Hi, I am Roman Shavlinski</h1>
-                <p>I am a front-end developer. I can provide clean code and good design.</p>
+        <div className={style.particle}>
+            <div className={style.container}>
+                <div className={style.row}>
+                    <div className={style.rowContainer}>
+                        <div className={style.homeContent}>
+                            <h1>
+                                Hi, I am
+                                <span> Roman Shaulinski</span>
+                            </h1>
+                            <p>I'm someone who is passionate about
+                                programming. I have experience building
+                                SPA with React/Redux/TypeScript and also
+                                experience building mobile apps using
+                                React Native / Expo. </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

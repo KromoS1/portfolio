@@ -1,10 +1,10 @@
 import React from "react";
-import style from "./Footer.module.css";
+import style from "../NavigateStyle.module.scss";
 
 export function Footer (){
     return(
         <div className={style.footer}>
-            © 2021 Roman
+            <span>© 2021 Roman</span>
         </div>
     )
 }

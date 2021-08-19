@@ -1,0 +1,125 @@
+@import "../../../../CommonStyles/CommonStyles.module";
+
+.aboutMe {
+  @include containerPartOf();
+
+  .container {
+    @include container();
+
+    .title {
+
+      @include titleH2();
+
+    }
+
+    .row {
+      @include rowMarg();
+
+      .containerPhoto {
+        max-width: 100%;
+
+        @media (min-width: 992px) {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+
+        .photo {
+          position: relative;
+
+          &:before {
+            content: "";
+            position: absolute;
+            height: 65%;
+            width: 15px;
+            background: rgba(3, 127, 255, .6);
+            left: 15%;
+            top: 0;
+          }
+
+          img {
+            margin-left: 15%;
+            width: 70%;
+            max-width: 100%;
+            vertical-align: middle;
+          }
+
+          &:after {
+            left: auto;
+            right: 15%;
+            top: auto;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            height: 65%;
+            width: 15px;
+            background: rgba(3, 127, 255, .6);
+          }
+        }
+
+      }
+
+      .meContainer {
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+        margin-top: var(--bs-gutter-y);
+
+        @media (min-width: 992px) {
+          flex: 0 0 auto;
+          width: 50%;
+        }
+
+        .meContent {
+
+          @media only screen and (max-width: 767px) {
+            margin-top: 30px;
+          }
+
+          @media only screen and (min-width: 768px) and (max-width: 991px) {
+            margin-top: 30px;
+          }
+
+          @include titleH3();
+
+          p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+          }
+
+          ul {
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 1rem;
+
+            li:last-child {
+              margin-bottom: 3px;
+            }
+
+            li {
+              list-style: none;
+              display: flex;
+
+              b {
+                min-width: 120px;
+                display: inline-block;
+                position: relative;
+                margin-right: 7px;
+                font-weight: bolder;
+
+                &:after {
+                  content: ":";
+                  position: absolute;
+                  top: 0;
+                  left: auto;
+                  right: 0;
+                }
+              }
+            }
+          }
+
+          @include buttonCv();
+        }
+      }
+    }
+  }
+}

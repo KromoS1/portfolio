@@ -1,0 +1,10 @@
+@import "src/CommonStyles/CommonStyles.module";
+
+.contents{
+    @include displayFlex(column,center,center);
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-color: $ColorContents;
+}
+

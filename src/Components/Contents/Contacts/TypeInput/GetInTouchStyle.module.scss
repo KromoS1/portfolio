@@ -1,0 +1,60 @@
+@import "src/CommonStyles/CommonStyles.module";
+
+.getInTouchBox{
+
+}
+
+//.container {
+//  max-width: 100%;
+//  padding-right: calc(var(--bs-gutter-x) * 0.5);
+//  padding-left: calc(var(--bs-gutter-x) * 0.5);
+//  margin-top: var(--bs-gutter-y);
+//  flex: 0 0 auto;
+//  width: 50%;
+//
+//  h4 {
+//    @include H4();
+//  }
+//
+//  .boxForm {
+//    text-align: left;
+//    --bs-gutter-x: 1.5rem;
+//    --bs-gutter-y: 0;
+//
+//    .field {
+//      margin-top: 10px;
+//      position: relative;
+//      padding-bottom: 20px;
+//
+//      input {
+//        label{
+//        }
+//        @include Field();
+//      }
+//
+//      textarea {
+//        @include Field();
+//        padding:10px 15px;
+//        min-height: 150px;
+//        resize: none;
+//
+//      }
+//
+//      button{
+//        @include Button();
+//      }
+//    }
+//
+//    .status{
+//      position: relative;
+//      padding: 1rem;
+//      margin-bottom: 1rem;
+//      border: 1px solid #f5c2c7;
+//      border-radius: .25rem;
+//      color: #842029;
+//      background-color: #f8d7da;
+//      width: 100%;
+//    }
+//
+//  }
+//}

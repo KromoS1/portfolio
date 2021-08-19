@@ -1,16 +1,23 @@
 import React from "react";
-import style from "./Work.module.css";
+import style from "../ResumeStyle.module.scss";
 
-export function Work() {
+type PropsType = {
+    year:string
+    nameCompany:string
+    position:string
+    desc:string
+}
+
+export function Work(props:PropsType) {
     return (
         <div className={style.organization}>
-            <div className={style.dateWorking}>2020</div>
+            <div className={style.dateWorking}>
+                <h6>{props.year}</h6>
+            </div>
             <div className={style.organizationDescription}>
-                <h2>Frontend web developer</h2>
-                <h3>abc Company</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, magni mollitia, aspernatur
-                    consequatur accusamus vero eum facere exercitationem velit suscipit ipsam placeat libero.
-                    Deleniti exercitationem nostrum quasi. Molestiae, vel porro.</p>
+                <h5>{props.position}</h5>
+                <h6>{props.nameCompany}</h6>
+                <p>{props.desc}</p>
             </div>
         </div>
     )

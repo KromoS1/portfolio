@@ -1,0 +1,35 @@
+@import "src/CommonStyles/CommonStyles.module";
+
+
+.resumeBox{
+  @include containerPartOf();
+  padding-bottom: 120px;
+
+  .container{
+    @include container();
+
+    .title{
+      @include titleH2();
+    }
+
+    .smallTitleWork{
+      @include smallTitle();
+
+    }
+
+    .wrapperWork{
+      @include wrapper();
+    }
+
+    .smallTitleEd{
+      @include smallTitle();
+
+    }
+
+    .wrapperEd{
+      @include wrapper();
+    }
+
+  }
+}
+

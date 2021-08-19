@@ -1,0 +1,147 @@
+@import "src/CommonStyles/CommonStyles.module";
+
+
+.contactsBox{
+    @include containerPartOf();
+    padding-bottom: 120px;
+    min-width: 100%;
+
+    .container{
+        @include container();
+
+
+        .title{
+            @include titleH2();
+        }
+        .row{
+            @include rowMarg();
+
+            .getInTouchBox{
+                @include rowPad();
+
+                @media (min-width: 992px){
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+                .boxForm{
+                    h4{
+                        @include h4();
+
+                        @media only screen and (max-width: 767px){
+                            font-size: 1.51rem;
+                            line-height: 2.13rem;
+                        }
+
+                        @media (min-width: 1200px){
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    form{
+                        .field {
+                            margin-top: 10px;
+                            position: relative;
+                            padding-bottom: 20px;
+
+                            input {
+                                label{
+                                }
+                                @include Field();
+                            }
+
+                            textarea {
+                                @include Field();
+                                padding:10px 15px;
+                                min-height: 150px;
+                                resize: none;
+
+                            }
+
+                            button{
+                                @include Button();
+                            }
+                        }
+
+                        .status{
+                            position: relative;
+                            padding: 1rem;
+                            margin-bottom: 1rem;
+                            border: 1px solid #f5c2c7;
+                            border-radius: .25rem;
+                            color: #842029;
+                            background-color: #f8d7da;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .infoBox{
+                @include rowPad();
+
+                @media (min-width: 992px){
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+
+                .contacts{
+                    margin-top: -30px;
+
+                    @media only screen and (max-width: 767px){
+                        margin-top: 50px;
+                    }
+
+                    @media only screen and (min-width: 768px) and (max-width: 991px){
+                        margin-top: 50px;
+                    }
+
+                    .contactInfo{
+                        margin-top: 30px;
+                        background: #191d2b;
+                        padding: 30px;
+                        display: flex;
+
+                        @media only screen and (max-width: 575px){
+                            padding: 20px;
+                            flex-wrap: wrap;
+                        }
+                        span{
+                            display: inline-block;
+                            height: 70px;
+                            width: 70px;
+                            flex: 0 0 70px;
+                            max-width: 70px;
+                            border: 1px solid #2e344e;
+                            text-align: center;
+                            line-height: 66px;
+                            margin-right: 20px;
+                        }
+                        .info{
+                            @media only screen and (max-width: 575px){
+                                margin-top: 20px;
+                                flex: 0 0 100%;
+                            }
+
+                            h6{
+                                margin-top: -5px;
+                                @include h6();
+                            }
+                            p{
+                                margin-bottom: 0;
+                                margin-top: 0;
+                                color: $ColorText;
+                                cursor: pointer;
+                                &:hover {
+                                    color: $ColorPrimary;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+

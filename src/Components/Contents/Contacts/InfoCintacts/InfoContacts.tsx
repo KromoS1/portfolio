@@ -1,46 +1,16 @@
-import React from "react";
-import style from "./InfoContacts.module.css"
+import React from 'react';
+import style from '../ContactsStyle.module.scss'
+import {Contact} from './Contact';
+import {faPhoneAlt,faEnvelope,faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
-type PropsType = {
-    typeInfo: string
-}
-
-export function InfoContacts(props: PropsType) {
-    switch (props.typeInfo) {
-        case "phone":
-            return (
-                <div className={style.informationBox}>
-                    <div className={style.iconInfo}>icon</div>
-                    <div className={style.contactsMe}>
-                        <h3>Phone</h3>
-                        <div className={style.paragraph}><p>+375-29-748-58-75</p></div>
-                    </div>
-                </div>
-            )
-        case "email":
-            return (
-                <div className={style.informationBox}>
-                    <div className={style.iconInfo}>icon</div>
-                    <div className={style.contactsMe}>
-                        <h3>Email</h3>
-                        <div className={style.paragraph}>
-                            <p>krakenhri@mail.ru</p>
-                            <p>krakenhri@yandex.ru</p>
-                        </div>
-                    </div>
-                </div>
-            )
-        case "address":
-            return (
-                <div className={style.informationBox}>
-                    <div className={style.iconInfo}>icon</div>
-                    <div className={style.contactsMe}>
-                        <div><h3>Address</h3></div>
-                        <div className={style.paragraph}><p>38/1 Sukharevskaya, Minsk, Belarus</p></div>
-                    </div>
-                </div>
-            )
-        default:
-            return <div>Error</div>
-    }
+export function InfoContacts() {
+    return (
+        <div className={style.infoBox}>
+           <div className={style.contacts}>
+               <Contact title={"Phone"} icon={faPhoneAlt} info={['+375-29-748-58-75']}/>
+               <Contact title={"Email"} icon={faEnvelope} info={['krakenHRI@mail.ru',"krakenHRI@yandex.ru"]}/>
+               <Contact title={"Address"} icon={faMapMarkerAlt} info={['38/1 Suhareuskaya Street, Minsk, Belarus']}/>
+           </div>
+        </div>
+    )
 }
