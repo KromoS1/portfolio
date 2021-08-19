@@ -21,11 +21,11 @@ export const WorkContainer = () => {
     return (
         <>
             <div className={style.smallTitleWork}>
-                    <span>
-                        <i>
-                            <FontAwesomeIcon icon={faBriefcase}/>
-                        </i>
-                    </span>
+                <span>
+                    <i>
+                        <FontAwesomeIcon icon={faBriefcase}/>
+                    </i>
+                </span>
                 <h4>Working Experience</h4>
             </div>
             <div className={style.wrapperWork}>
