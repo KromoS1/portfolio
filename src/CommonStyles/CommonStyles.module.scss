@@ -149,8 +149,8 @@ $ColorContents: #10121b;
     max-width: 1140px;
   }
 
-  @media (min-width: 1400px) {
-    max-width: 1320px;
+  @media (min-width: 1500px) {
+    max-width: 1000px;
   }
 
 }
@@ -169,11 +169,11 @@ $ColorContents: #10121b;
   transform: translateY(-40%);
   white-space: nowrap;
 
-  @media only screen and (max-width: 360px) {
+  @media only screen and (max-width: 370px) {
     font-size: 2.3rem;
   }
 
-  @media only screen and (min-width: 360px) and (max-width: 519px) {
+  @media only screen and (min-width: 370px) and (max-width: 519px) {
     font-size: 3rem;
   }
 
@@ -272,12 +272,12 @@ $ColorContents: #10121b;
       background: $ColorPrimary;
     }
 
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 370px) {
       font-size: 1.2rem;
       line-height: 1.8rem;
     }
 
-    @media only screen and (min-width: 360px) and (max-width: 519px) {
+    @media only screen and (min-width: 370px) and (max-width: 519px) {
       font-size: 1.76rem;
       line-height: 2.2rem;
     }

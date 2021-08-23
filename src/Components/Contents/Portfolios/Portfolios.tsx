@@ -13,8 +13,8 @@ return (
     <div className={style.projectsBox}>
         <div className={style.container}>
             <div className={style.title}>
-                <h2>Portfolios</h2>
-                <span>Portfolios</span>
+                <h2>Portfolio</h2>
+                <span>Portfolio</span>
             </div>
             <div className={style.row}>
                 <Project nameProject={"Social-Network"} description={descSN} img={sn}/>

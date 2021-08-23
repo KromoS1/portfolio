@@ -14,7 +14,6 @@
 
     .smallTitleWork{
       @include smallTitle();
-
     }
 
     .wrapperWork{
@@ -23,13 +22,11 @@
 
     .smallTitleEd{
       @include smallTitle();
-
     }
 
     .wrapperEd{
       @include wrapper();
     }
-
   }
 }
 

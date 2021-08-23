@@ -22,7 +22,6 @@
         .serviceBox {
           @include boxElement();
 
-
           .myService {
             border: 1px solid $ColorBorder;
             border-top: 5px solid $ColorBorder;

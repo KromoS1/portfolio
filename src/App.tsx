@@ -15,11 +15,11 @@ export function App() {
         <div className="App">
             <Navigate/>
             <div className={style.contents}>
-                <Route exact path={"/"} render={() => <Home/>}/>
-                <Route  path={"/about"} render={() => <AboutMePage/>}/>
-                <Route  path={"/resume"} render={() => <ResumePage/>}/>
-                <Route  path={"/projects"} render={() => <Portfolios/>}/>
-                <Route  path={"/contacts"} render={() => <Contacts/>}/>
+                <Route exact path={'/'} render={() => <Home/>}/>
+                <Route path={'/about'} render={() => <AboutMePage/>}/>
+                <Route path={'/resume'} render={() => <ResumePage/>}/>
+                <Route path={'/projects'} render={() => <Portfolios/>}/>
+                <Route path={'/contacts'} render={() => <Contacts/>}/>
             </div>
         </div>
     );

@@ -16,10 +16,9 @@
     z-index: 1;
     color: $ColorText;
 
-    &:hover {
+    &:hover,:active, :after {
       background-color: $ColorPrimary;
       opacity: 0.6;
-      color: $ColorHoverLink;
     }
 
     &:focus {
@@ -33,7 +32,6 @@
       top: 0;
       left: 0;
       right: 100%;
-      //height: 100%;
       width: 0;
       background: rgba(3, 127, 255, .2);
       visibility: hidden;
@@ -45,8 +43,6 @@
 @mixin navigateUp{
   position: absolute;
   width: 100%;
-  //height: 10%;
-  //max-height: 80px;
   background-color: $ColorBackNav;
   border-bottom: 1px solid #2e344e;
   z-index: 2;
