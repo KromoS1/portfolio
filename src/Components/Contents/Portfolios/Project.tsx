@@ -5,9 +5,10 @@ type PropsType = {
     nameProject:string
     description:string
     img:string
+    urlGHPage:string
 }
 
-export const Project:FC<PropsType> = ({nameProject,description,img}) => {
+export const Project:FC<PropsType> = ({nameProject,description,img,urlGHPage}) => {
     return (
         <div className={style.projectContainer}>
             <div className={style.project}>
@@ -15,7 +16,7 @@ export const Project:FC<PropsType> = ({nameProject,description,img}) => {
                     <img src={img} alt="/"/>
                 </div>
                 <h5>
-                    <a href="">{nameProject}</a>
+                    <a href={urlGHPage}>{nameProject}</a>
                 </h5>
                 <h6>{description}</h6>
             </div>
